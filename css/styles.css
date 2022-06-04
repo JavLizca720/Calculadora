@@ -1,0 +1,61 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+}
+
+body{
+    margin: 0;
+    background-color: violet;
+}
+
+.container{
+    /*Centrar*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculate{
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: 160px repeat(5, 58px);
+    background-color: pink;
+    padding: 15px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    font-size: 1.5em;
+    border: none;
+    background-color: aqua;
+    box-shadow: 5px 5px 10px -3px #00000080;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.display{
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: gray;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+#valor-actual{
+    font-size: 1.5em;
+}
+
+#valor-previo{
+    font-size: 2em;
+}
